@@ -7,6 +7,11 @@ About / AlexsTech-Portofolio:)
  <!-- main-area -->
  <main>
 
+    @php
+      $homeslide = App\Models\HomeSlide::find(1);
+      $aboutpage = App\Models\About::find(1);
+@endphp
+
     <!-- breadcrumb-area -->
     <section class="breadcrumb__wrap">
         <div class="container custom-container">
@@ -43,7 +48,7 @@ About / AlexsTech-Portofolio:)
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about__image">
-                        <img src="{{ asset($aboutpage->about_image) }}" alt="200x200">
+                        <img src="{{ asset($homeslide->home_slide) }}" alt="200x200">
                     </div>
                 </div>
                 <div class="col-lg-6">
