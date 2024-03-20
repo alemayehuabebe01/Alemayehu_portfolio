@@ -18,6 +18,7 @@ class HomeSliderController extends Controller
     public function UpdateSlider(Request $request){
         
         $slide_id = $request->id;
+       
         if($request->file('home_slide')){
             $image = $request->file('home_slide');
             $name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
