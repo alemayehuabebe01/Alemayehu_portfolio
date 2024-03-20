@@ -22,7 +22,7 @@
                                 <ul class="navigation">
                                     <li class="{{ ($route == 'home')? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
                                     <li class="{{ ($route == 'home.about.page')? 'active' : '' }}"><a href="{{ route('home.about.page') }}">About</a></li>
-                                    <li><a href="services-details.html">Services</a></li>
+                                    <li class="{{ ($route == 'home.service')? 'active' : '' }}"><a href="{{ route('home.service') }}">Services</a></li>
                                     <li class="{{ ($route == 'home.portfolio')? 'active' : '' }}"><a href="{{ route('home.portfolio') }}">Portfolio</a>
                                         {{-- <ul class="sub-menu">
                                             <li><a href="portfolio.html">Portfolio</a></li>

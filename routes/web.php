@@ -9,6 +9,7 @@ use App\Http\Controllers\Home\BlogCategoryController;
 use App\Http\Controllers\Home\BlogController;
 use App\Http\Controllers\Home\FooterController;
 use App\Http\Controllers\Home\ContactController;
+use App\Http\Controllers\Home\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -143,6 +144,16 @@ Route::controller(ContactController::class)->group(function (){
 
 });//end route
 
+Route::controller(ServiceController::class)->group(function (){
+    Route::get('/Services', 'AllService')->name('all.service');
+    Route::get('/Add/Services', 'AddService')->name('add.service');
+    Route::post('/Store/Service', 'StoreService')->name('store.service');
+    Route::get('/Services/Details', 'ServiceDetails')->name('home.service');
+    
+    
+    
+
+});//end route
 
 
 
