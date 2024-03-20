@@ -1,6 +1,10 @@
 @extends('admin.admin_master')
 @section('admin')
 
+@php
+$homeslide = App\Models\HomeSlide::find(1);
+ 
+@endphp
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
                         <div class="main-content">
 
@@ -47,7 +51,7 @@
                                         <div class="mb-3 row">
                                             <label for="example-text-input" class="col-sm-2 col-form-label"></label>
                                             <div class="col-sm-10">
-                                            <img id="showImage" class="rounded avatar-lg" alt="200x200" src="{{ (!empty($homeslide->home_slide))? url('Upload/home_slide/'.$homeslide->home_slide):url('Upload/no_image.jpg') }}" data-holder-rendered="true">
+                                            <img id="showImage" class="rounded avatar-lg" alt="200x200" src="{{ asset($homeslide->home_slide) }}" data-holder-rendered="true">
                                             </div>
                                         </div>
                                         <!-- end row -->
