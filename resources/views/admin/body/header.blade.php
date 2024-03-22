@@ -5,19 +5,19 @@
                     <div class="d-flex">
                         <!-- LOGO -->
                         <div class="navbar-brand-box">
-                            <a href="index.html" class="logo logo-dark">
+                            <a href="{{ route('admin.index') }}" class="logo logo-dark">
                                 <span class="logo-sm">
                                     <img src="{{ asset('backend/assets/images/logo-sm.ICO') }}" alt="logo-sm" height="22">
                                 </span>
                                 
                             </a>
 
-                            <a href="index.html" class="logo logo-light">
+                            <a href="{{ route('admin.index') }}" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="{{ asset('backend/assets/images/logo_white.png') }}" alt="logo-sm-light" height="110" width="50">
+                                    <img src="{{ asset('backend/assets/images/logo_white.png') }}" alt="logo-sm-light" height="80" width="50">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="{{ asset('backend/assets/images/logo_white.png') }}" alt="logo-light" height="120" width="120" >
+                                    <img src="{{ asset('backend/assets/images/logo_white.png') }}" alt="logo-light" height="80" width="110" >
                                 </span>
                             </a>
                         </div>
@@ -26,13 +26,13 @@
                             <i class="align-middle ri-menu-2-line"></i>
                         </button>
 
-                        <!-- App Search-->
+                        {{-- <!-- App Search-->
                         <form class="app-search d-none d-lg-block">
                             <div class="position-relative">
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="ri-search-line"></span>
                             </div>
-                        </form>
+                        </form> --}}
 
                       
                     </div>

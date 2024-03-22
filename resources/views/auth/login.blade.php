@@ -30,8 +30,8 @@
                         <div class="mt-4 text-center">
                             <div class="mb-3">
                                 <a href="{{ route('login') }}" class="auth-logo">
-                                    <img src="{{ asset('backend/assets/images/logo-sm.ICO') }}" height="90" width="100" class="mx-auto logo-dark" alt="">
-                                    <img src="{{ asset('backend/assets/images/logo-sm.ICO') }}" height="90" width="100" class="mx-auto logo-light" alt="">
+                                    <img src="{{ asset('backend/assets/images/logo_black.png') }}" height="150" width="200" class="mx-auto logo-dark" alt="">
+                                    <img src="{{ asset('backend/assets/images/logo_black.png') }}" height="150" width="200" class="mx-auto logo-light" alt="">
                                 </a>
                             </div>
                         </div>
