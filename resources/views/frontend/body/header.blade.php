@@ -23,19 +23,19 @@
                                     <li class="{{ ($route == 'home')? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
                                     <li class="{{ ($route == 'home.about.page')? 'active' : '' }}"><a href="{{ route('home.about.page') }}">About</a></li>
                                     <li class="{{ ($route == 'home.service')? 'active' : '' }}"><a href="{{ route('home.service') }}">Services</a></li>
-                                    <li class="{{ ($route == 'home.portfolio')? 'active' : '' }}"><a href="{{ route('home.portfolio') }}">Portfolio</a>
+                                    <li class="{{ ($route == 'home.portfolio')? 'active' : '' }}"><a href="{{ route('home.portfolio') }}">Our Work</a>
                                         {{-- <ul class="sub-menu">
                                             <li><a href="portfolio.html">Portfolio</a></li>
                                             <li><a href="portfolio-details.html">Portfolio Details</a></li>
                                         </ul> --}}
                                     </li>
-                                    <li class="{{ ($route == 'home.blog')? 'active' : '' }}"><a href="{{ route('home.blog') }}">Our Blog</a>
+                                    <li class="{{ ($route == 'home.blog')? 'active' : '' }}"><a href="{{ route('home.blog') }}">News</a>
                                         {{-- <ul class="sub-menu">
                                             <li><a href="blog.html">Our News</a></li>
                                             <li><a href="blog-details.html">News Details</a></li>
                                         </ul> --}}
                                     </li>
-                                    <li class="{{ ($route == 'contact.me')? 'active' : '' }}"><a href="{{ route('contact.me') }}">contact me</a></li>
+                                    <li class="{{ ($route == 'contact.me')? 'active' : '' }}"><a href="{{ route('contact.me') }}">contact Us</a></li>
                                 </ul>
                             </div>
                             <div class="header__btn d-none d-md-block">
